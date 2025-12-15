@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="settings">
+        <header>
+        <h1>Calculator Type</h1>
+        <a href="../basicCalculator/basic_calc.html">Basic Calculator</a>
+        <a href="../index.html">Home</a>
+        <a href="../binaryConverter/binary_conv.html">Binary Converter</a>
+        </header>
+    </section>
+
+    <section id ="display-area">
+        <h2>Interest Calculator</h2>
+        <h3>Amount:</h3>
+        <input id="principal" type="text" placeholder="Principal Amount" required>
+        <h3>Rate of Interest:</h3>
+        <input id="rate" type="text" placeholder="Rate of Interest (%)" required>
+        <h3>Term:</h3>
+        <input id="term" type="text" placeholder="Time (years)" required>
+        <button id="calculate" onclick="calculateInterest()">Calculate</button>
+    </section>
+
+    <section id="result">
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

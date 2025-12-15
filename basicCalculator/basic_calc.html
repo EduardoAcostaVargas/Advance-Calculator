@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="settings">
+        <header>
+        <h1>Calculator Type</h1>
+        <a href="../index.html">Home</a>
+        <a href="interest_calc.html">Interest Calculator</a>
+        <a href="binary_calc.html">Binary Calculator</a>
+    </header>
+    </section>
+
+    <section id="display">
+        <h2>Basic Calculator</h2>
+        <div id="calculator">
+            <input type="text" id="result" disabled>
+            <div id="buttons">
+                <button class="btn" onclick="deleteLast()"><img src="/svgs/delete-left-svgrepo-com.svg" alt="delete" width="40" height="40"></button>
+                <button class="btn" onclick="clearDisplay()">AC</button>
+                <button class="btn" onclick="percentage()"><img src="/svgs/percent-svgrepo-com.svg" alt="percent" width="40" height="40"></button>
+                <button class="btn" onclick="appendOperator('/')"><img src="/svgs/divide-svgrepo-com.svg" alt="divide" width="40" height="40"></button>
+                <button class="btn" onclick="appendToDisplay('7')">7</button>
+                <button class="btn" onclick="appendToDisplay('8')">8</button>
+                <button class="btn" onclick="appendToDisplay('9')">9</button>
+                <button class="btn" onclick="appendOperator('*')"><img src="/svgs/x-svgrepo-com.svg" alt="multiply" width="40" height="40"></button>
+                <button class="btn" onclick="appendToDisplay('4')">4</button>
+                <button class="btn" onclick="appendToDisplay('5')">5</button>
+                <button class="btn" onclick="appendToDisplay('6')">6</button>
+                <button class="btn" onclick="appendOperator('-')"><img src="/svgs/minus-svgrepo-com.svg" alt="minus" width="40" height="40"></button>
+                <button class="btn" onclick="appendToDisplay('1')">1</button>
+                <button class="btn" onclick="appendToDisplay('2')">2</button>
+                <button class="btn" onclick="appendToDisplay('3')">3</button>
+                <button class="btn" onclick="appendOperator('+')"><img src="/svgs/plus-large-svgrepo-com.svg" alt="plus" width="40" height="40"></button>
+                <button class="btn" onclick="negPos()">+/-</button>
+                <button class="btn" onclick="appendToDisplay('0')">0</button>
+                <button class="btn" onclick="appendToDisplay('.')">.</button>
+                <button class="btn" onclick="calculateResult()"><img src="/svgs/equal-alt-svgrepo-com.svg" alt="equal" width="40" height="40"></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

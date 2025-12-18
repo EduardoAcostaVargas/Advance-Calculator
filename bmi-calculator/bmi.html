@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <section id="settings">
+        <header>
+        <h1>Calculator Type</h1>
+        <a href="/basicCalculator/basic_calc.html">Basic Calculator</a>
+        <a href="/interestCalculator/interest_calc.html">Interest Calculator</a>
+        <a href="/binaryConverter/binary_conv.html">Binary Converter</a>
+        <a href="../index.html">Home</a>
+        </header>
+    </section>
+
+    <section id="information">
+        <h1>BMI Information</h1>
+        <p>
+           Body Mass Index (BMI) is a screening tool used to estimate whether a person has a healthy body weight in relation to their height. 
+           It does not directly measure body fat, but it gives a general indication of whether someone may be underweight, at a healthy weight, overweight, or obese. 
+        </p>
+
+        <h2>Why Is BMI Used?</h2>
+        <p>
+            BMI is widely used by healthcare professionals as a quick and easy method to assess weight categories that may lead to health problems. 
+            It helps identify individuals who may be at risk for conditions such as <strong>heart disease, diabetes, and hypertension</strong> due to their weight.
+        </p>
+    </section>
+
+    <div class="container">
+        <h1>BMI Calculator</h1>
+
+        <form id="bmi-form">
+            <label for="weight">Weight (lbs):</label>
+            <input type="text" id="weight" name="weight" required>
+
+            <label for="height">Height (in):</label>
+            <input type="text" id="height" name="height" required>
+
+            <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+        </form>
+        <div id="result"></div>
+        <div id="category"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
